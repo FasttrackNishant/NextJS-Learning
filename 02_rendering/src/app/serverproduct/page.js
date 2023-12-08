@@ -1,5 +1,4 @@
-import { fetchServerResponse } from 'next/dist/client/components/router-reducer/fetch-server-response';
-import { Festive } from 'next/font/google';
+import Showproduct from './showproduct';
 
 async function fetchserverData() {
 	console.log('fetch data');
@@ -25,9 +24,11 @@ const page = async () => {
 					<div>
 						<h2>{item.id}</h2>
 						<h2>{item.title}</h2>
+						<Showproduct price={item.price} />
 					</div>
 				))}
 			</div>
+			<div></div>
 		</div>
 	);
 };
