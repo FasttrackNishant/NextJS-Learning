@@ -18,6 +18,8 @@ export default function Home() {
 			<button onClick={() => router.push('/serverproduct')}>
 				Server Product
 			</button>
+			<br />
+			<Link href="/test">Test the page</Link>
 		</div>
 	);
 }
